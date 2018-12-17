@@ -1,0 +1,47 @@
+body.hide-core_availability fieldset#id_availabilityconditionsheader,
+body.hide-core_completion fieldset#id_activitycompletionheader,
+body.hide-core_competencies fieldset#id_competenciessection,
+body.hide-core_tags fieldset#id_tagshdr {
+    display:none;
+}
+
+body.hide-mod_assign_mod_availability fieldset#id_availability,
+body.hide-mod_assign_mod_feedbacktypes fieldset#id_feedbacktypes,
+body.hide-mod_assign_mod_submissionsettings fieldset#id_submissionsettings,
+body.hide-mod_assign_mod_groupsubmissionsettings fieldset#id_groupsubmissionsettings,
+body.hide-mod_assign_mod_notifications fieldset#id_notifications,
+body.hide-mod_assign_mod_modstandardgrade fieldset#id_modstandardgrade,
+body.hide-mod_assign_mod_modstandardelshdr fieldset#id_modstandardelshdr {
+    display:none;
+}
+
+body.hide-mod_forum_mod_attachmentswordcounthdr fieldset#id_attachmentswordcounthdr,
+body.hide-mod_forum_mod_subscriptionandtrackinghdr fieldset#id_subscriptionandtrackinghdr,
+body.hide-mod_forum_mod_discussionlocking fieldset#id_discussionlocking,
+body.hide-mod_forum_mod_blockafterheader fieldset#id_blockafterheader,
+body.hide-mod_forum_mod_modstandardgrade fieldset#id_modstandardgrade,
+body.hide-mod_forum_mod_modstandardratings fieldset#id_modstandardratings,
+body.hide-mod_forum_mod_modstandardelshdr fieldset#id_modstandardelshdr {
+    display:none;
+}
+
+body.hide-mod_label_mod_modstandardelshdr fieldset#id_modstandardelshdr {
+    display:none;
+}
+
+body.hide-mod_page_mod_appearancehdr fieldset#id_appearancehdr,
+body.hide-mod_page_mod_modstandardelshdr fieldset#id_modstandardelshdr {
+    display:none;
+}
+
+body.hide-mod_resource_mod_optionssection fieldset#id_optionssection,
+body.hide-mod_resource_mod_modstandardelshdr fieldset#id_modstandardelshdr {
+    display:none;
+}
+
+body.hide-mod_url_mod_optionssection fieldset#id_optionssection,
+body.hide-mod_url_mod_parameterssection fieldset#id_parameterssection,
+body.hide-mod_url_mod_modstandardelshdr fieldset#id_modstandardelshdr {
+    display:none;
+}
+
