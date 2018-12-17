@@ -8,8 +8,8 @@
 
 ## Installation:
 
-Bei der Konfiguration des Level Plugins ist die Matrix der Zugriffssteuerung entsprechend einzustellen.
-Vor allem bei welcher Aktivität die Sichtbarkeit eingestellt werden kann.
+Bei der Konfiguration des Level Plugins sind die Level (Einsteiger, Erfahrener Nutzer und Experten) durch einen Admin einzustellen.
+Das benutzerdefinierte Level kann jeder Nutzer über sein Profil individuell einstellen.
 
 ## Technische Dokumentation:
 ### Ordnerstruktur
@@ -26,7 +26,7 @@ Im classes Ordner (falls noch nicht vorhanden, muss dieser angelegt werden)
 
 Dort müssen die PHP Dateien core_course_renderer und core_renderer angelegt bzw. ergänzt werden.
 
-### Für den Arbeitsplaner sind folgende Methoden relevant
+### Für das Level Plugin sind folgende Methoden relevant
 
 * classes/output/core/course_renderer.php
   * public function course_modchooser
