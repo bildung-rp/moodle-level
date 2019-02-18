@@ -73,8 +73,10 @@
          ]
     }
 }}
-<div class="initialbar {{class}} d-flex">
-    <span class="initialbarlabel">{{title}}</span>
+<div class="initialbar {{class}} d-flex flex-wrap justify-content-center justify-content-md-start">
+    <span class="initialbarlabel mr-2">{{title}}</span>
+
+    <div class="initialbargroups d-flex flex-wrap justify-content-center justify-content-md-start">
     <ul class="pagination pagination-sm">
     {{#current}}
         <li class="initialbarall page-item">
@@ -87,7 +89,6 @@
         </li>
     {{/current}}
     </ul>
-    <div class="initialbargroups d-flex">
         {{#group}}
             <ul class="pagination pagination-sm">
 

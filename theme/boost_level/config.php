@@ -29,6 +29,8 @@ require_once(__DIR__ . '/lib.php');
 $THEME->name = 'boost_level';
 $THEME->sheets = [];
 $THEME->editor_sheets = [];
+$THEME->editor_scss = ['editor'];
+$THEME->usefallback = true;
 $THEME->scss = function($theme) {
     return theme_boost_level_get_main_scss_content($theme);
 };
@@ -81,7 +83,7 @@ $THEME->layouts = [
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
-        'options' => array('nonavbar' => true, 'langmenu' => true),
+        'options' => array('nonavbar' => true, 'langmenu' => true, 'nocontextheader' => true),
     ),
     // My public page.
     'mypublic' => array(
@@ -149,6 +151,7 @@ $THEME->enable_dock = false;
 $THEME->csstreepostprocessor = 'theme_boost_level_css_tree_post_processor';
 $THEME->extrascsscallback = 'theme_boost_level_get_extra_scss';
 $THEME->prescsscallback = 'theme_boost_level_get_pre_scss';
+$THEME->precompiledcsscallback = 'theme_boost_level_get_precompiled_css';
 $THEME->yuicssmodules = array();
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->requiredblocks = '';

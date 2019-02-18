@@ -32,3 +32,6 @@ Dort müssen die PHP Dateien core_course_renderer und core_renderer angelegt bzw
   * public function course_modchooser
 * classes/output/core_renderer.php
   * public function header
+  * protected function block_content
+* classes/output/block_settings_renderer.php
+  * public function settings_tree

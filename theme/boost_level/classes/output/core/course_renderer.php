@@ -74,10 +74,15 @@ class course_renderer extends \core_course_renderer {
             'inputsize' => $inputsize,
             'value' => $value
         ];
+        if ($format != 'navbar') {
+            $helpicon = new \help_icon('coursesearch', 'core');
+            $data->helpicon = $helpicon->export_for_template($this);
+        }
 
-        return $this->render_from_template('theme_boost_level/course_search_form', $data);
+        return $output;
     }
-	
+
+
    /**
      * Overridden to filter the modules, that should not be available
      * controlled by local_authoringcapability Plugin.

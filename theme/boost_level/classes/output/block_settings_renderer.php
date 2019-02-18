@@ -46,5 +46,22 @@ class block_settings_renderer extends \block_settings_renderer {
         ];
         return $this->render_from_template('block_settings/search_form', $data);
     }
+    
+    /**
+     * Remove nodes that should be hidden according to settings in local_authoringcapability
+     * plugin.
+     *
+     * @param settings_navigation $navigation
+     * @return string content of the settings tree.
+     */
+    public function settings_tree(\settings_navigation $navigation) {
+        global $CFG;
+        // +++ SYNERGY LEARNING: filter settings navigation depending on level.
+        if (file_exists($CFG->dirroot . '/local/authoringcapability/classes/local/corechanges.php')) {
+            \local_authoringcapability\local\corechanges::hide_settings_navigation_items($navigation);
+        }
+        // +++ SYNERGY LEARNING: filter settings navigation depending on level.
+        return parent::settings_tree($navigation);
+    }	    
 
 }

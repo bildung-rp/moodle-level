@@ -28,18 +28,19 @@ define(['jquery', './tether', 'core/event'], function(jQuery, Tether, Event) {
     window.jQuery = jQuery;
     window.Tether = Tether;
 
-    require(['theme_boost_level/util',
-            'theme_boost_level/alert',
-            'theme_boost_level/button',
-            'theme_boost_level/carousel',
-            'theme_boost_level/collapse',
-            'theme_boost_level/dropdown',
-            'theme_boost_level/modal',
-            'theme_boost_level/scrollspy',
-            'theme_boost_level/tab',
-            'theme_boost_level/tooltip',
-            'theme_boost_level/popover'],
-            function() {
+    require(['theme_boost/aria',
+            'theme_boost/util',
+            'theme_boost/alert',
+            'theme_boost/button',
+            'theme_boost/carousel',
+            'theme_boost/collapse',
+            'theme_boost/dropdown',
+            'theme_boost/modal',
+            'theme_boost/scrollspy',
+            'theme_boost/tab',
+            'theme_boost/tooltip',
+            'theme_boost/popover'],
+            function(Aria) {
 
         // We do twice because: https://github.com/twbs/bootstrap/issues/10547
         jQuery('body').popover({
@@ -65,6 +66,8 @@ define(['jquery', './tether', 'core/event'], function(jQuery, Tether, Event) {
                 });
             });
         });
+
+        Aria.init();
     });
 
 
